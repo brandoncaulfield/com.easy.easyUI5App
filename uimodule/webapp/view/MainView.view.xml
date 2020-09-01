@@ -1,11 +1,27 @@
- <mvc:View controllerName="com.easy.easyUI5App.controller.MainView"
-  displayBlock="true"
+<mvc:View controllerName="com.easy.easyUI5App.controller.MainView" displayBlock="true"
   xmlns="sap.m"
+  xmlns:t="sap.ui.table"
   xmlns:mvc="sap.ui.core.mvc">
-  <App id="idAppControl" >
+  <App id="idAppControl">
     <pages>
       <Page title="{i18n>title}">
-        <content></content>
+        <content>
+          <t:Table>
+            <t:extension>
+              <OverflowToolbar>
+                <Title id="title" text="Products"/>
+              </OverflowToolbar>
+            </t:extension>
+            <t:columns>
+              <t:Column width="11rem">
+                <Label text="Product Name" />
+                <t:template>
+                  <Text text="Column 1" wrapping="false" />
+                </t:template>
+              </t:Column>
+            </t:columns>
+          </t:Table>
+        </content>
       </Page>
     </pages>
   </App>
