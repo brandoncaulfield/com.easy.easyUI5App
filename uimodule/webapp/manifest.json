@@ -8,7 +8,14 @@
       "version": "1.0.0"
     },
     "title": "{{appTitle}}",
-    "description": "{{appDescription}}"
+    "description": "{{appDescription}}",
+    "dataSources": {
+      "SFLIGHT": {
+        "uri": "/sap/opu/odata/sap/Z_SFLIGHT_CDS/",
+        "type": "OData",
+        "localUri": "localservice/Z_SFLIGHT_CDS/metadata.xml"
+      }
+    }
   },
   "sap.ui": {
     "technology": "UI5",
@@ -51,6 +58,10 @@
         "settings": {
           "bundleName": "com.easy.easyUI5App.i18n.i18n"
         }
+      },
+      "sflightModel": {
+        "dataSource": "Z_SFLIGHT_CDS",
+        "settings": {} 
       }
     },
     "resources": {
