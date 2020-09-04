@@ -57,9 +57,9 @@
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
           "bundleName": "com.easy.easyUI5App.i18n.i18n"
-        }
-      },
+        },
       "sflightModel": {
+        "type": "sap.ui.model.JSON.JSONModel",
         "dataSource": "Z_SFLIGHT_CDS",
         "settings": {} 
       }
@@ -99,4 +99,5 @@
       }
     }
   }
+}
 }

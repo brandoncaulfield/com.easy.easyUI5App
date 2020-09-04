@@ -3,5 +3,6 @@ sap.ui.define([
 ], function(Controller) {
   "use strict";
 
-  return Controller.extend("com.easy.easyUI5App.controller.MainView", {});
+  return Controller.extend("com.easy.easyUI5App.controller.MainView", {
+  });
 });
